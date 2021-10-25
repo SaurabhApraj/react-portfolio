@@ -1,6 +1,7 @@
 import React from 'react'
 import './about.css'
-import Photo from '../images/undraw.png'
+import Photo from '../images/pic.jpg'
+import SocialContact from '../../common/social-contact';
 
 function About() {
     return (
@@ -14,7 +15,7 @@ function About() {
                     <img src={Photo} alt="pic" className="picture"/>
                 </div>
             </div>
-            <div className="about-bottom"></div>
+            <SocialContact/>
         </div>
     )
 }

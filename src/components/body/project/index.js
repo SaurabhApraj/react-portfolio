@@ -1,10 +1,17 @@
 import React from 'react'
 import './project.css'
-
+import ProjectCard from './project-card';
+import { ProjectData } from "../../data/projects";
 function Project() {
+    const data = ProjectData;
     return (
-        <div>
-            Project
+        <div className="projects">
+            <label className="section-title">Projects</label>
+            <div>
+                {data.map((project)=>{
+                    return <ProjectCard project={project}/>;
+                })}
+            </div>
         </div>
     )
 }
