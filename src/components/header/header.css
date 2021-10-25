@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  /* background-color: aquamarine; */
+  justify-content: space-around;
+  padding: 12px;
+  flex: 1;
+  position: relative;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  /* flex: 1; */
+  justify-content: flex-end;
+}
+.menu-item {
+  width: 24px;
+}
+.mobile-menu {
+  display: none;
+}
+.web-menu {
+  display: flex;
+}
+
+@media only screen and (max-width: 720px) {
+  .menu {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+
+  .web-menu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 512px) {
+}
